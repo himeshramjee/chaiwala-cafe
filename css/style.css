@@ -1,10 +1,44 @@
+/* https://www.w3schools.com/cssref/ */
 /* https://css-tricks.com/snippets/css/complete-guide-grid/ */
+/* https://www.codingflicks.com/2021/02/5-ways-to-center-div-using-css.html */
+
+body {
+  /* margin: 1rem; */
+  font-weight: normal;
+  font-size: medium;
+  line-height: 1.5;
+  /* background-color: white; */
+}
+
+.important-order-notes {
+  border-style: groove;
+  border-radius: 10%;
+  margin-left: 5%;
+  background-color: aliceblue;
+}
+
+.important-order-notes > h3 {
+  justify-content: center;
+  align-content: center;
+  font-size: large;
+}
+
+.grid-main-container {
+  display: grid;
+  margin-left: 30%;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  grid-gap: 0px;
+  place-items: left;
+  width: 30%;
+}
 
 .grid-menus-container {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 100%;
-  grid-gap: 10px;
+  grid-gap: 0px;
+  place-items: center;
 }
 
 .grid-item-menus {
@@ -17,17 +51,12 @@
 
 .grid > div {
   background: #ede7f6;
-  padding: 1.5rem;
-  border-radius: 1rem;
+  /* padding: 1.5rem; */
+  /* border-radius: 1rem; */
 }
 
 .menu-image {
   width: 100%;
-}
-
-body {
-  margin: 2rem;
-  font: 12px system-ui;
 }
 
 .bad-font-style-bag {
